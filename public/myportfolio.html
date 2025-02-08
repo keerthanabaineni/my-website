@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keerthana Portfolio</title>
+        <link rel="stylesheet" href="myportfolio.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script> <!-- Add the xlsx library -->
+    </head>
+    <body>
+       <!-- Header Section -->
+         <div id="header">
+            <div id="container">
+                <nav>
+                    
+                    <div id="sidebars">
+                        <img src="photos need/my name .jpg" class="logo">
+                        <ul>
+                            <li><a href="#header" class="item">HOME</a></li>
+                            <li><a href="#about" class="item">ABOUT</a></li>
+
+                            
+                            <li><a href="#projects" class="item">PROJECTS</a></li>
+                            <li><a href="#contact" class="item">CONTACT</a></li>
+                            <li><a href="photos need/myupdatedresume.pdf" download="Keerthana_Resume.pdf" class="item">RESUME</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+ <div id="header">
+    <div class="header-text">
+        <div class="header-text-left">
+            
+            <h2 id="webdeveloper">Hi! I Am Keerthana Baineni <span></span></h2>
+            <p>Full Stack Developer</p>
+            <button class="hire-btn">Hire Me</button> 
+        </div>
+        <div class="header-text-right">
+            <img class="main-image" src="photos need/portfolio background image.jpg" alt="Keerthana Baineni">
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="about-col-1">
+            <img class="aboutmephoto" src="photos need/portfolio background image.jpg" alt="Keerthana Baineni">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                Welcome to My Portfolio!<br><br>
+                Hi, I’m Keerthana, a  web developer passionate about creating engaging digital experiences. Skilled in HTML, CSS, and JavaScript, I specialize in designing intuitive user interfaces with seamless functionality.<br><br>
+                As a fresher, I’m eager to learn, grow, and collaborate on impactful projects. I’m also passionate about entrepreneurship and driven to explore innovative opportunities.<br><br>
+                Let’s connect and build something extraordinary together!
+            </p>
+
+            <div class="tab-buttons">
+                <button class="tab-button" onclick="toggleTab('skills')">Skills</button>
+                <button class="tab-button" onclick="toggleTab('internships')">Internships</button>
+                <button class="tab-button" onclick="toggleTab('education')">Education</button>
+            </div>
+
+            <div class="tab-content" id="skills">
+                <ul>
+                    <li>Developing Web Interfaces</li>
+                    <li>DSA in java</li>
+                    <li>SQL</li>
+                    <li> CSE Fundamentals</li>
+                    <ul> <a href="#">Tools </a>
+                        <li>
+                            Github
+                        </li>
+                        <li> Power bi</li>
+
+                    </ul>
+                </ul>
+            </div>
+            <div class="tab-content" id="internships">
+                <ul>
+                    <li><a href="#"Infosys Spring Board Internship></a></li>
+                    <li><a href="images/">Internship at Oasis Infobyte </a></li>
+                    <li ><a href="photos need/codsoft (python) certification letter.pdf">Virtual INtership in Python Programming at codsoft </a></li>
+                    <li><a href="photos need/Coursera python certificate.pd"> Crash Course on  Python by Google </a></li>
+                    <li><a href="photos need/web concepts certificate at spring board.pdf"> Web Concepts at Infosys Spring Board</a></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="education">
+                <ul>
+                    <li>B.Tech  Computer Science and Engineering<span> at JNTU College of Engineering Ananthapuramu</span> </li>
+                    <li>Intermediate <span>Narayana Junior College</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <ul>
+            <li>AI Campus Tour Guide Chatbot</li>
+            <li>Faculty Research and Publication Management System</li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact">
+     <!-- Contact Section -->
+     <section id="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <form id="contact-Form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p id="successMessage" style="display: none; color: green;">Form submitted successfully!</p>
+            </div>
+        </div>
+    </section>
+
+        <div class="contact-right">
+            <h2>Follow Me</h2>
+            <ul class="social-images">
+                <li><a href="https://www.linkedin.com/in/keerthana-baineni-0b7131279/"><img src="photos need/linkedin.jpeg"  class="social-images"> </a></li>
+                <li><a href="https://github.com/keerthanabaineni"><img src="photos need/github.jpeg" alt="GitHub" class="social-images"></a></li>
+                <li><a href="https://x.com/Keerthana_b_17?t=teCPHUJUH2152sIuV_kveQ&s=08"><img src="photos need/x image.jpeg" alt="Twitter" class="social-images"> </a></li>
+                <li><a href="https://www.instagram.com/keerthanabyneni/"><img src="photos need/instagram.jpeg" alt="Instagram" class="social-images"> </a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 Keerthana Baineni. All Rights Reserved.</p>
+</footer>
+
+<script src="myportfolio.js"></script>
+</body>
+</html>

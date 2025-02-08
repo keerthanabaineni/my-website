@@ -1,0 +1,423 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.main-image{
+    border-radius: 50%;
+}
+
+.header-text-left {
+    flex: 1;
+    text-align: left;
+}
+
+.header-text-left p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.header-text-left h2 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.header-text-left h2 span {
+    color: #ff004f;
+}
+
+/* Hire Me Button */
+.hire-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff004f, #ff0066);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hire-btn:hover {
+    background: linear-gradient(45deg, #ff0066, #ff004f);
+    transform: scale(1.1);
+}
+
+/* Sidebar Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 140px;
+    margin-righT: 750px;
+    margin-top: 30px;
+}
+
+#sidebars {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 5px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.6s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Scroll to Section */
+html {
+    scroll-behavior: smooth;
+}
+
+/* About Section */
+#about {
+    padding: 60px 0;
+    color: #ababab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-col-1 {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.aboutmephoto {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-col-2 {
+    flex: 2;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.sub-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Tab Navigation */
+.tab-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #ff004f;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #e60043;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab-content li {
+    padding: 5px 0;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#projects .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+#projects li {
+    list-style: none;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#projects li:hover {
+    background-color: #ff004f;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-left {
+    max-width: 500px;
+}
+
+.contact-right {
+    max-width: 400px;
+    margin-top:100px;
+
+}
+
+h2, h3 {
+    color: #ff004f;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff004f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e60043;
+}
+
+/* Footer */
+footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .header-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text-left, .header-text-right {
+        flex: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+    @media (max-width: 768px) {
+        .social-images {
+            flex-wrap: wrap; /* Allows wrapping on small screens */
+            justify-content: center; /* Centers the icons */
+            gap: 5px; /* Reduces spacing for smaller screens */
+
+        }
+    
+        .social-images img {
+            height: 25px; /* Slightly smaller icons for mobile */
+            width: 25px;
+        }
+    }
+    /* new reponsive */
+    @media (max-width: 768px) {
+        .logo {
+            width: 100px; /* Reduce logo size */
+            margin-right: auto; /* Center align */
+            margin-left: auto;
+            display: block;
+        }
+    
+        .nav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        #sidebars {
+            margin-right: 0; /* Remove extra right margin */
+            margin-top: 10px;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        nav ul li {
+            margin: 10px 0; /* Add spacing between menu items */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .logo {
+            width: 80px; /* Even smaller for very small screens */
+        }
+    }
+    
+    
+  
+        .social-images {
+            flex-direction: column; /* Stacks icons vertically on very small screens */
+            align-items: center;
+        }
+    
+        .social-images img {
+            height: 20px;
+            width: 20px;
+        }
+    
+    
+
+    
+}
+
+
+/* Social images */
+.social-images {
+    
+    display: flex;
+    align-items: center;  /* Ensures vertical alignment */
+    justify-content: center;  /* Aligns items in a row */
+    gap: 10px;  /* Adds spacing between icons */
+   
+
+}
+.social-images img{
+    height:30px;
+    width:30px;
+}
+
+
+
+ul.social-images{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
