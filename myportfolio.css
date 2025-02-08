@@ -301,6 +301,28 @@ form button {
 form button:hover {
     background-color: #e60043;
 }
+/* Social images */
+.social-images {
+    
+    display: flex;
+    align-items: center;  /* Ensures vertical alignment */
+    justify-content: center;  /* Aligns items in a row */
+    gap: 10px;  /* Adds spacing between icons */
+   
+
+}
+.social-images img{
+    height:30px;
+    width:30px;
+}
+
+
+
+ul.social-images{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
 
 /* Footer */
 footer {
@@ -394,32 +416,135 @@ footer {
             height: 20px;
             width: 20px;
         }
-    
+    /* Contact Form Responsiveness */
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-left, .contact-right {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .contact-left {
+        margin-left: 0;
+    }
+
+    .contact-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    form input, form textarea {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-left, .contact-right {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+/* Main Image (Profile Picture) Responsiveness */
+.main-image {
+    width: 180px; /* Default size for desktop */
+    height: 180px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .main-image {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-image {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* About Me Photo Responsiveness */
+.aboutmephoto {
+    width: 300px; /* Default size for desktop */
+    height: auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .aboutmephoto {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutmephoto {
+        width: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutmephoto {
+        width: 180px;
+    }
+}
+
+
     
 
     
 }
 
 
-/* Social images */
-.social-images {
-    
-    display: flex;
-    align-items: center;  /* Ensures vertical alignment */
-    justify-content: center;  /* Aligns items in a row */
-    gap: 10px;  /* Adds spacing between icons */
-   
-
-}
-.social-images img{
-    height:30px;
-    width:30px;
-}
-
-
-
-ul.social-images{
-    list-style-type:none;
-    padding:0;
-    margin:0;
-}
